@@ -3,6 +3,9 @@ package chapter4
 import org.apache.spark.ml.feature.{NGram, Tokenizer}
 import org.apache.spark.sql.SparkSession
 
+/**
+ * 每个 n-gram代表一个空格分割的 n个连续字符。 如果 输入少于 n 个字符串，将没有 输出 结果
+ */
 object NGramDemo {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession
