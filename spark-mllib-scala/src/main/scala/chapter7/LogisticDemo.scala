@@ -45,7 +45,7 @@ object LogisticDemo {
     val featureArray = Array("season","yr","mnth","hr","holiday","weekday","workingday","weathersit","temp","atemp","hum","windspeed")
     val assembler = new VectorAssembler().setInputCols(featureArray).setOutputCol("features")
 
-    //对类别特征进行索引化和数值化(VectorIndexer解决数据集中的类别特征Vector。它可以自动识别哪些特征是类别型的，并且将原始值转换为类别指标。)
+    //对类别特征进行索引化和数值化(VectorIndexer解决数据集中的类别特征Vector。它可以自动识别哪些特征是类别型的，并且将原始值转换为类别指标。
     val featureIndex = new VectorIndexer().setInputCol("features").setOutputCol("indexedFeatures").setMaxCategories(24)
     //对类别特征使用OneHotEncoder，把他们转换为二元向量
     val data2=new OneHotEncoder().setInputCol("season").setOutputCol("seasonVec")

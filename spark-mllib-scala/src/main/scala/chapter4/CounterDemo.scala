@@ -6,6 +6,7 @@ import org.apache.spark.sql.SparkSession
 object CounterDemo {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
+      .config("spark.driver.host","localhost")
       .appName("CounterDemo")
       .master("local")
       .getOrCreate()

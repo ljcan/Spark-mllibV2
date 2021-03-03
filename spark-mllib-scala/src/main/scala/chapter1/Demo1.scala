@@ -14,6 +14,7 @@ object Demo1 {
 //    val sQLContext = new SQLContext(sc)
 
     val spark = SparkSession.builder()
+      .config("spark.driver.host","localhost")
       .appName("Demo1")
       .master("local")
       .getOrCreate()

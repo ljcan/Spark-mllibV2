@@ -34,7 +34,16 @@
 
     <dependencies>
 
-
+<!--        <dependency>-->
+<!--            <groupId>com.tencent.weixin</groupId>-->
+<!--            <artifactId>xgboost4j</artifactId>-->
+<!--            <version>0.84</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.tencent.weixin</groupId>-->
+<!--            <artifactId>xgboost4j-spark</artifactId>-->
+<!--            <version>0.84</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>org.apache.camel</groupId>
